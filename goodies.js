@@ -147,9 +147,10 @@
   
         Display5()
       
-     
-  
-  
-
-//getting text to be input by user on each hour
 //when "save" button is clicked text should be stored locally
+var userText9 = $("#9a").html();
+
+$(".saveBtn").click(function setInput9() {
+  localStorage.setItem("9aText",userText9);
+console.log(localStorage);
+})
