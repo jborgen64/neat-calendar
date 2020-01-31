@@ -148,9 +148,103 @@
         Display5()
       
 //when "save" button is clicked text should be stored locally
-var userText9 = $("#9a").html();
 
-$(".saveBtn").click(function setInput9() {
-  localStorage.setItem("9aText",userText9);
-console.log(localStorage);
+
+//setting and getting text for 9a div from local storage
+$(".saveBtn").on("click", function() {
+  var nineText = $("#9a").val().trim();
+  console.log(nineText);
+  localStorage.setItem("9atext", nineText);
+});
+
+var getNineText = localStorage.getItem("9atext");
+console.log(getNineText)
+$("#9a").val(getNineText);
+
+//setting and getting text for 10a div from local storage
+$(".saveBtn").on("click", function() {
+  var tenText = $("#10a").val().trim();
+  console.log(tenText);
+  localStorage.setItem("10atext", tenText);
+});
+
+var getTenText = localStorage.getItem("10atext");
+console.log(getTenText)
+$("#10a").val(getTenText);
+
+//setting and getting text for 11a div from local storage
+$(".saveBtn").on("click", function() {
+  var elevenText = $("#11a").val().trim();
+  console.log(elevenText);
+  localStorage.setItem("11atext", elevenText);
+});
+
+var getElevenText = localStorage.getItem("11atext");
+console.log(getElevenText)
+$("#11a").val(getElevenText);
+
+//setting and getting text for 12p div from local storage
+$(".saveBtn").on("click", function() {
+  var twelveText = $("#12p").val().trim();
+  console.log(twelveText);
+  localStorage.setItem("12ptext", twelveText);
+});
+
+var getTwelveText = localStorage.getItem("12ptext");
+console.log(getTwelveText)
+$("#12p").val(getTwelveText);
+
+//setting and getting text for 1p div from local storage
+$(".saveBtn").on("click", function() {
+  var oneText = $("#1p").val().trim();
+  console.log(oneText);
+  localStorage.setItem("1ptext", oneText);
 })
+
+var getOneText = localStorage.getItem("1ptext");
+console.log(getOneText)
+$("#1p").val(getOneText);
+
+//setting and getting text for 2p div from local storage
+$(".saveBtn").on("click", function() {
+  var twoText = $("#2p").val().trim();
+  console.log(twoText);
+  localStorage.setItem("2ptext", twoText);
+})
+
+var getTwoText = localStorage.getItem("2ptext");
+console.log(getTwoText)
+$("#2p").val(getTwoText);
+
+//setting and getting text for 3p div from local storage
+$(".saveBtn").on("click", function() {
+  var threeText = $("#3p").val().trim();
+  console.log(threeText);
+  localStorage.setItem("3ptext", threeText);
+})
+
+var getThreeText = localStorage.getItem("3ptext");
+console.log(getThreeText)
+$("#3p").val(getThreeText);
+
+//setting and getting text for 4p div from local storage
+$(".saveBtn").on("click", function() {
+  var fourText = $("#4p").val().trim();
+  console.log(fourText);
+  localStorage.setItem("4ptext", fourText);
+})
+
+var getFourText = localStorage.getItem("4ptext");
+console.log(getFourText)
+$("#4p").val(getFourText);
+
+//setting and getting text for 5p div from local storage
+$(".saveBtn").on("click", function() {
+  var fiveText = $("#5p").val().trim();
+  console.log(fiveText);
+  localStorage.setItem("5ptext", fiveText);
+})
+
+var getFiveText = localStorage.getItem("5ptext");
+console.log(getFiveText)
+$("#5p").val(getFiveText);
